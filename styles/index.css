@@ -11,3 +11,7 @@ ul {
 li > a {
   display: block;
 }
+
+dd {
+  margin: 0 0 1em;
+}
