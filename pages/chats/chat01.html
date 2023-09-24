@@ -4,8 +4,19 @@
   <meta charset="utf-8">
   <title>ArtDen</title>
   <link rel="stylesheet" href="../../styles/index.css">
+  <script>
+    function getTime() {
+      let fullDate = new Date();
+      let shortTime = fullDate.toLocaleTimeString([], { timeStyle: 'short' });
+      document.getElementById('timestamp').textContent = `[${shortTime}]`;
+    }
+  </script>
 </head>
   <body style="font-weight: bolder; margin: 0;">
+    <div style="margin: 1em;">
+      <button onclick="getTime()">Time</button>
+      <p id="timestamp"></p>
+    </div>
     <dl>
       <dt style="color: blue;">
         [13:55] &lt;&lt;&lt;
